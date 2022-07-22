@@ -1,0 +1,36 @@
+---
+import Project from "components/Project/Project.astro";
+---
+
+<div class="flex flex-col items-center max-w-[1500px] w-full">
+  <h2 class="self-start font-medium text-4xl mb-10">My projects</h2>
+  <Project
+    name="Tea-stash"
+    desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam magni repudiandae mollitia voluptate sequi corporis ipsam quibusdam voluptas quis cupiditate voluptatem soluta, placeat architecto exercitationem?"
+    imgSrc=""
+    icons={[
+      {
+        icon: "https://camo.githubusercontent.com/92ec9eb7eeab7db4f5919e3205918918c42e6772562afb4112a2909c1aaaa875/68747470733a2f2f6173736574732e76657263656c2e636f6d2f696d6167652f75706c6f61642f76313630373535343338352f7265706f7369746f726965732f6e6578742d6a732f6e6578742d6c6f676f2e706e67",
+        iconName: "Next.js",
+      },
+      {
+        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/640px-Typescript_logo_2020.svg.png",
+        iconName: "Typescript",
+      },
+      {
+        icon: "https://yt3.ggpht.com/FXkEVhfl6Y2IgqFHlhYpdOZEJIlNfBuAt88-YYtzQnsK1vCg7zsvfrKrj5uzfVbokGBjsX7ucA=s900-c-k-c0x00ffffff-no-rj",
+        iconName: "Hygraph",
+      },
+      {
+        icon: "https://avatars.githubusercontent.com/u/54212428?v=4",
+        iconName: "Chakra-ui",
+      },
+      {
+        icon: "https://raw.githubusercontent.com/emotion-js/emotion/main/emotion.png",
+        iconName: "Emotion",
+      },
+    ]}
+    github="https://github.com/mattponiat/tea-stash"
+    website="https://tea-stash.vercel.app/"
+  />
+</div>
