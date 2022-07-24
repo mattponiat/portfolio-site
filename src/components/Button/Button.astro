@@ -2,6 +2,7 @@
 interface Props {
   text: string;
   href: string;
+  class?: any;
 }
 
 const { text, href } = Astro.props as Props;
@@ -10,7 +11,7 @@ const { text, href } = Astro.props as Props;
 <a
   href={href}
   target="_blank"
-  class="flex items-center p-3 border border-solid border-white transition duration-300 hover:bg-white hover:text-black relative"
+  class="flex justify-center items-center w-[95px] h-[45px] border border-solid border-white cursor-pointer no-underline transition duration-300 hover:bg-white hover:text-black"
 >
   {text}
 </a>
