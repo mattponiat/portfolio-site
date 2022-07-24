@@ -1,47 +1,37 @@
 ---
 import Button from "components/Button/Button.astro";
 
-export interface Icons {
-  icon: string;
-  iconName: string;
-}
-
 export interface Props {
   name: string;
   desc: string;
   imgSrc: string;
-  icons: Icons[];
   github: string;
   website: string;
+  href: string;
 }
 
-const { name, desc, imgSrc, icons, github, website } = Astro.props as Props;
+const { name, desc, imgSrc, github, website, href } = Astro.props as Props;
 ---
 
 <div
-  class="flex gap-8 max-w-[1365px] w-full min-h-[500px] border border-solid border-white p-6"
+  class="flex gap-[25px] max-w-[1365px] w-full min-h-[350px] border border-solid border-white p-6"
 >
-  <div class="flex flex-col max-w-[800px] h-[450px]">
+  <div class="flex flex-col max-w-[850px] min-h-[350px]">
     <h3 class="font-medium text-3xl">{name}</h3>
-    <p class="text-xl mt-6 ml-1">{desc}</p>
-    <div class="flex justify-between max-w-full mt-auto">
-      <div class="flex gap-3">
-        {icons.map((icon) => (
-          <div class="flex flex-col gap-1 items-center">
-            <div class="w-[34px] h-[34px]">
-              <img src={icon.icon} alt={icon.iconName} class="w-full h-full" />
-            </div>
-            <span class="text-sm">{icon.iconName}</span>
-          </div>
-        ))}
-      </div>
+    <p class="text-xl mt-6 ml-1 mb-6">{desc}</p>
+    <div
+      class="flex flex-col md:flex-row gap-4 justify-between max-w-full mt-auto"
+    >
+      <Button text="More info" href={href} />
       <div class="flex gap-4">
-        <Button text="Github" href={github} />
         <Button text="Visit site" href={website} />
+        <Button text="Github" href={github} />
       </div>
     </div>
   </div>
-  <div class="self-center w-[483px] h-[450px] border border-solid border-white">
+  <div
+    class="min-w-[440px] h-[350px] border border-solid border-white hidden lg:block"
+  >
     <img src={imgSrc} alt={`${name} example image`} />
   </div>
 </div>
