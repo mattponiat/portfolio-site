@@ -1,0 +1,23 @@
+---
+export interface IconsType {
+  icon: string;
+  iconName: string;
+}
+
+export interface Props {
+  icons: IconsType[];
+}
+
+const { icons } = Astro.props as Props;
+---
+
+<div class="flex gap-3">
+  {icons.map((icon) => (
+    <div class="flex flex-col gap-1 items-center">
+      <div class="w-[34px] h-[34px]">
+        <img src={icon.icon} alt={icon.iconName} class="w-full h-full" />
+      </div>
+      <span class="text-sm">{icon.iconName}</span>
+    </div>
+  ))}
+</div>
