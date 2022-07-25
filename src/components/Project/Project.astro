@@ -20,7 +20,7 @@ const { name, desc, imgSrc, github, website, href } = Astro.props as Props;
     <h3 class="font-medium text-2xl lg:text-3xl">{name}</h3>
     <p class="text-base md:text-lg lg:text-xl mt-6 ml-1 mb-6">{desc}</p>
     <div
-      class="flex flex-col md:flex-row gap-4 justify-between max-w-full mt-auto"
+      class="flex flex-col sm:flex-row gap-4 justify-between max-w-full mt-auto"
     >
       <Button text="More info" href={href} />
       <div class="flex gap-4">
