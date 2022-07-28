@@ -14,7 +14,11 @@ const { name, videoSrc, website, github } = Astro.props as Props;
 
 <div class="flex flex-col max-w-full w-full">
   <a href="/" class="w-fit">
-    <Icon.ArrowLeft size="55" class="animation" title="" />
+    <Icon.ArrowLeft
+      size="60"
+      class="p-1 rounded-full duration-300 hover:bg-zinc-800"
+      title=""
+    />
   </a>
   <div
     class="flex flex-col self-center items-center max-w-[1200px] w-full mt-16"
@@ -33,19 +37,3 @@ const { name, videoSrc, website, github } = Astro.props as Props;
     </div>
   </div>
 </div>
-
-<style>
-  @keyframes slide {
-    0%,
-    100% {
-      transform: translate(0, 0);
-    }
-
-    50% {
-      transform: translate(-5px, 0);
-    }
-  }
-  .animation:hover {
-    animation: slide 1s ease-in-out infinite;
-  }
-</style>
