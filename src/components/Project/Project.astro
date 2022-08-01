@@ -14,9 +14,9 @@ const { name, desc, imgSrc, github, website, href } = Astro.props as Props;
 ---
 
 <div
-  class="flex gap-[25px] max-w-[1365px] w-full min-h-[350px] border border-solid border-white p-4 md:p-6"
+  class="flex gap-[25px] max-w-[1300px] w-full min-h-fit border border-solid border-white p-4 md:p-6"
 >
-  <div class="flex flex-col max-w-[850px] min-h-[350px]">
+  <div class="flex flex-col max-w-[760px] w-full min-h-[290px]">
     <h3 class="font-medium text-2xl lg:text-3xl">{name}</h3>
     <p class="text-base md:text-lg lg:text-xl my-6 ml-1">{desc}</p>
     <div
@@ -30,8 +30,12 @@ const { name, desc, imgSrc, github, website, href } = Astro.props as Props;
     </div>
   </div>
   <div
-    class="min-w-[440px] h-[350px] border border-solid border-white hidden lg:block"
+    class="self-center min-w-[470px] h-fit border border-solid border-white hidden lg:block"
   >
-    <img src={imgSrc} alt={`${name} example image`} />
+    <img
+      src={imgSrc}
+      alt={`${name} example image`}
+      class="w-auto h-[290px] object-cover"
+    />
   </div>
 </div>
