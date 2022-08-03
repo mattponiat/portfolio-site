@@ -27,7 +27,7 @@ const { name, videoSrc, website, github } = Astro.props as Props;
       {name}
     </h1>
     <div class="flex flex-col items-end gap-8 px-1 md:px-3">
-      <video width="1000px" autoplay muted loop>
+      <video width="1000px" autoplay muted loop preload="metadata">
         <source type="video/mp4" src={videoSrc} />
       </video>
       <div class="flex gap-4">
