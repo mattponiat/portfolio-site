@@ -20,7 +20,7 @@ const { name, desc, imgSrc, github, website, href } = Astro.props as Props;
     <h3 class="font-medium text-2xl lg:text-3xl">{name}</h3>
     <p class="text-base md:text-lg lg:text-xl my-6 ml-1">{desc}</p>
     <div
-      class="flex flex-col sm:flex-row gap-4 justify-between max-w-full mt-auto"
+      class="flex flex-row flex-breakpoint gap-4 justify-between max-w-full mt-auto"
     >
       <Button text="More info" href={href} />
       <div class="flex gap-4">
@@ -39,3 +39,11 @@ const { name, desc, imgSrc, github, website, href } = Astro.props as Props;
     />
   </div>
 </div>
+
+<style>
+  @media screen and (max-width: 377px) {
+    .flex-breakpoint {
+      flex-direction: column;
+    }
+  }
+</style>
