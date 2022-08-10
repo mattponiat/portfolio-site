@@ -1,4 +1,5 @@
 ---
+import { Image } from "@astrojs/image/components";
 import Button from "components/Button/Button.astro";
 
 export interface Props {
@@ -32,10 +33,13 @@ const { name, desc, imgSrc, github, website, href } = Astro.props as Props;
   <div
     class="self-center min-w-[470px] h-fit border border-solid border-white hidden lg:block"
   >
-    <img
+    <Image
       src={imgSrc}
       alt={`${name} example image`}
-      class="w-auto h-[290px] object-cover"
+      height={290}
+      width={470}
+      format={"webp"}
+      quality={100}
     />
   </div>
 </div>
