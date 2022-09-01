@@ -16,15 +16,17 @@ const { icons } = Astro.props as Props;
     Technologies
   </h2>
   <div
-    class="flex flex-wrap justify-start gap-6 max-w-[1000px] w-full px-1 md:px-3 ml-1"
+    class="flex flex-wrap justify-start gap-5 max-w-[1000px] w-full px-1 md:px-3 ml-1"
   >
-    {icons.map((icon) => (
-      <div class="flex flex-col items-center gap-1 w-[74px]">
-        <div class="w-[45px] h-[45px] md:w-[55px] md:h-[55px]">
-          <img src={icon.icon} alt={icon.iconName} class="w-full h-full" />
+    {
+      icons.map((icon) => (
+        <div class="flex flex-col items-center gap-1 w-[68px] sm:w-[74px]">
+          <div class="w-[45px] h-[45px] md:w-[55px] md:h-[55px]">
+            <img src={icon.icon} alt={icon.iconName} class="w-full h-full" />
+          </div>
+          <span class="text-sm sm:text-base text-center">{icon.iconName}</span>
         </div>
-        <span class="text-md text-center">{icon.iconName}</span>
-      </div>
-    ))}
+      ))
+    }
   </div>
 </div>
