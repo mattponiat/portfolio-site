@@ -11,6 +11,8 @@ const { title } = Astro.props as Props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Mateusz Poniatowski" />
+    <meta name="robots" content="index, follow" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,7 +38,7 @@ const { title } = Astro.props as Props;
     </script>
   </head>
   <body>
-    <slot></slot>
+    <slot />
     <style>
       * {
         box-sizing: border-box;
