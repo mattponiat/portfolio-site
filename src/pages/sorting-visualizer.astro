@@ -6,54 +6,47 @@ import Layout from "layouts/Layout.astro";
 ---
 
 <Layout title="Sorting Visualizer">
-  <div
+  <main
     class="flex flex-col max-w-full min-h-screen p-4 md:p-8 lg:p-14 text-white"
   >
-    <section class="flex flex-col items-center max-w-full w-full">
-      <ProjectMainInfo
-        name="Sorting Visualizer"
-        videoSrc="https://www.data.mattponiat.pl/project-videos/sorting-visualizer.mp4"
-        website="https://sorting.mattponiat.pl"
-        github="https://github.com/mattponiat/sorting-visualizer"
-      />
-    </section>
-    <section class="flex flex-col items-center max-w-full w-full mt-16">
-      <Icons
-        icons={[
-          {
-            icon: "https://www.data.mattponiat.pl/icons/react-logo.webp",
-            iconName: "React",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/vite-logo.webp",
-            iconName: "Vite",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/typescript-logo.webp",
-            iconName: "Typescript",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/stitches-logo.webp",
-            iconName: "Stitches",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/radix-logo.webp",
-            iconName: "Radix-ui",
-          },
-        ]}
-      />
-    </section>
-    <section class="flex flex-col items-center max-w-full w-full my-16">
-      <ProjectDesc
-        >Web application that visualizes sorting algorithms.<br />
-        Users can choose the sorting algorithm from the dropdown menu and then customize
-        the length and animation delay.<br /><br />
-        The biggest challenge I had to overcome was managing the state of the application
-        and animating the algorithms.<br /><br />
-        I'm still working on improving the performance of sorting functions.<br
-        />
-        I'm also planning to add more sorting algorithms in the near future.
-      </ProjectDesc>
-    </section>
-  </div>
+    <ProjectMainInfo
+      name="Sorting Visualizer"
+      videoSrc="https://www.data.mattponiat.pl/project-videos/sorting-visualizer.mp4"
+      website="https://sorting.mattponiat.pl"
+      github="https://github.com/mattponiat/sorting-visualizer"
+    />
+    <Icons
+      icons={[
+        {
+          src: "https://www.data.mattponiat.pl/icons/react-logo.webp",
+          iconName: "React",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/vite-logo.webp",
+          iconName: "Vite",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/typescript-logo.webp",
+          iconName: "Typescript",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/stitches-logo.webp",
+          iconName: "Stitches",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/radix-logo.webp",
+          iconName: "Radix-ui",
+        },
+      ]}
+    />
+    <ProjectDesc
+      >Web application that visualizes sorting algorithms.<br />
+      Users can choose the sorting algorithm from the dropdown menu and then customize
+      the length and animation delay.<br /><br />
+      The biggest challenge I had to overcome was managing the state of the application
+      and animating the algorithms.<br /><br />
+      I'm still working on improving the performance of sorting functions.<br />
+      I'm also planning to add more sorting algorithms in the near future.
+    </ProjectDesc>
+  </main>
 </Layout>

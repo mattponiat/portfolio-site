@@ -6,71 +6,65 @@ import Layout from "layouts/Layout.astro";
 ---
 
 <Layout title="Tea-stash">
-  <div
+  <main
     class="flex flex-col max-w-full min-h-screen p-4 md:p-8 lg:p-14 text-white"
   >
-    <section class="flex flex-col items-center max-w-full w-full">
-      <ProjectMainInfo
-        name="Tea-stash"
-        videoSrc="https://www.data.mattponiat.pl/project-videos/tea-stash.mp4"
-        website="https://teas.mattponiat.pl"
-        github="https://github.com/mattponiat/tea-stash"
-      />
-    </section>
-    <section class="flex flex-col items-center max-w-full w-full mt-16">
-      <Icons
-        icons={[
-          {
-            icon: "https://www.data.mattponiat.pl/icons/react-logo.webp",
-            iconName: "React",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/nextjs-logo.webp",
-            iconName: "Next.js",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/typescript-logo.webp",
-            iconName: "Typescript",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/hygraph-logo.webp",
-            iconName: "Hygraph",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/apollo-logo.webp",
-            iconName: "Apollo",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/chakra-logo.webp",
-            iconName: "Chakra-ui",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/emotion-logo.webp",
-            iconName: "Emotion",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/framer-motion-logo.webp",
-            iconName: "Framer Motion",
-          },
-        ]}
-      />
-    </section>
-    <section class="flex flex-col items-center max-w-full w-full my-16">
-      <ProjectDesc
-        >Website made for storing information about teas.<br /><br />
-        Since I'm passionate about tea, I wanted to make a project that reflects
-        this hobby of mine.<br /><br />
-        The biggest challenge I've faced was the UI design because I had never done
-        it before.<br />
-        Making this project has taught me a lot about css, flexbox, grid and responsive
-        design.<br />
-        I've used Chakra-ui to help me with the components, but everything is still
-        designed by me.<br /><br />
-        I've used Apollo to connect to my Hygraph database where I store all the
-        data about teas.<br />
-        I've learned how to use headless CMS, GraphQL queries and how to fetch data
-        from my database by using Static Site Generation in Next.js.<br />
-      </ProjectDesc>
-    </section>
-  </div>
+    <ProjectMainInfo
+      name="Tea-stash"
+      videoSrc="https://www.data.mattponiat.pl/project-videos/tea-stash.mp4"
+      website="https://teas.mattponiat.pl"
+      github="https://github.com/mattponiat/tea-stash"
+    />
+    <Icons
+      icons={[
+        {
+          src: "https://www.data.mattponiat.pl/icons/react-logo.webp",
+          iconName: "React",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/nextjs-logo.webp",
+          iconName: "Next.js",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/typescript-logo.webp",
+          iconName: "Typescript",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/hygraph-logo.webp",
+          iconName: "Hygraph",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/apollo-logo.webp",
+          iconName: "Apollo",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/chakra-logo.webp",
+          iconName: "Chakra-ui",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/emotion-logo.webp",
+          iconName: "Emotion",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/framer-motion-logo.webp",
+          iconName: "Framer Motion",
+        },
+      ]}
+    />
+    <ProjectDesc
+      >Website made for storing information about teas.<br /><br />
+      Since I'm passionate about tea, I wanted to make a project that reflects this
+      hobby of mine.<br /><br />
+      The biggest challenge I've faced was the UI design because I had never done
+      it before.<br />
+      Making this project has taught me a lot about css, flexbox, grid and responsive
+      design.<br />
+      I've used Chakra-ui to help me with the components, but everything is still
+      designed by me.<br /><br />
+      I've used Apollo to connect to my Hygraph database where I store all the data
+      about teas.<br />
+      I've learned how to use headless CMS, GraphQL queries and how to fetch data
+      from my database by using Static Site Generation in Next.js.<br />
+    </ProjectDesc>
+  </main>
 </Layout>

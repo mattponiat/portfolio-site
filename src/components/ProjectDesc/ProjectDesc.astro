@@ -1,12 +1,14 @@
-<div class="flex flex-col items-center max-w-[1200px] w-full">
-  <h2 class="self-start font-medium text-2xl sm:text-3xl md:text-4xl mb-8">
-    Description
-  </h2>
-  <div class="flex max-w-[1000px] w-full px-1 md:px-3">
-    <p
-      class="text-lg leading-relaxed md:text-xl md:leading-relaxed lg:text-2xl lg:leading-relaxed ml-1"
-    >
-      <slot></slot>
-    </p>
+<section class="flex flex-col items-center max-w-full w-full my-16">
+  <div class="flex flex-col items-center max-w-[1200px] w-full">
+    <h2 class="self-start font-medium text-2xl sm:text-3xl md:text-4xl mb-8">
+      Description
+    </h2>
+    <div class="flex max-w-[1000px] w-full px-1 md:px-3">
+      <p
+        class="text-lg leading-relaxed md:text-xl md:leading-relaxed lg:text-2xl lg:leading-relaxed ml-1"
+      >
+        <slot />
+      </p>
+    </div>
   </div>
-</div>
+</section>

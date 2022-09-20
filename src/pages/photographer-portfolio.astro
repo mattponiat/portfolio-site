@@ -6,73 +6,67 @@ import Layout from "layouts/Layout.astro";
 ---
 
 <Layout title="Photographer's Portfolio">
-  <div
+  <main
     class="flex flex-col max-w-full min-h-screen p-4 md:p-8 lg:p-14 text-white"
   >
-    <section class="flex flex-col items-center max-w-full w-full">
-      <ProjectMainInfo
-        name="Photographer's portfolio"
-        videoSrc="https://www.data.mattponiat.pl/project-videos/photographer-portfolio.mp4"
-        website="https://lukaszponiatowski.pl"
-        github="https://github.com/mattponiat/lukaszponiatowski-portfolio"
-      />
-    </section>
-    <section class="flex flex-col items-center max-w-full w-full mt-16">
-      <Icons
-        icons={[
-          {
-            icon: "https://www.data.mattponiat.pl/icons/react-logo.webp",
-            iconName: "React",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/nextjs-logo.webp",
-            iconName: "Next.js",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/typescript-logo.webp",
-            iconName: "Typescript",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/aws-lambda-logo.webp",
-            iconName: "AWS Lambda",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/amazon-s3-logo.webp",
-            iconName: "Amazon S3",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/styled-components-logo.webp",
-            iconName: "Styled Components",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/mui-logo.webp",
-            iconName: "Material-UI",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/formik-logo.webp",
-            iconName: "Formik",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/xstate-logo.webp",
-            iconName: "XState",
-          },
-        ]}
-      />
-    </section>
-    <section class="flex flex-col items-center max-w-full w-full my-16">
-      <ProjectDesc>
-        Portfolio website made for a photographer.<br />
-        It allows you to view his photos, read about his approach to photography
-        and contact him through the contact form.<br /><br />
-        This project has taught me how to create forms with Formik and how to validate
-        them with Yup and XState.<br />
-        The function responsible for sending the emails is written in AWS Lambda.<br
-        /><br />
-        For storing the photos I've used Amazon S3 bucket that is connected to a
-        custom subdomain.<br /><br />
-        This time the site was designed by my client, but I made a lot of UI fixes
-        which we both discussed and agreed on.
-      </ProjectDesc>
-    </section>
-  </div>
+    <ProjectMainInfo
+      name="Photographer's portfolio"
+      videoSrc="https://www.data.mattponiat.pl/project-videos/photographer-portfolio.mp4"
+      website="https://lukaszponiatowski.pl"
+      github="https://github.com/mattponiat/lukaszponiatowski-portfolio"
+    />
+    <Icons
+      icons={[
+        {
+          src: "https://www.data.mattponiat.pl/icons/react-logo.webp",
+          iconName: "React",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/nextjs-logo.webp",
+          iconName: "Next.js",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/typescript-logo.webp",
+          iconName: "Typescript",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/aws-lambda-logo.webp",
+          iconName: "AWS Lambda",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/amazon-s3-logo.webp",
+          iconName: "Amazon S3",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/styled-components-logo.webp",
+          iconName: "Styled Components",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/mui-logo.webp",
+          iconName: "Material-UI",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/formik-logo.webp",
+          iconName: "Formik",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/xstate-logo.webp",
+          iconName: "XState",
+        },
+      ]}
+    />
+    <ProjectDesc>
+      Portfolio website made for a photographer.<br />
+      It allows you to view his photos, read about his approach to photography and
+      contact him through the contact form.<br /><br />
+      This project has taught me how to create forms with Formik and how to validate
+      them with Yup and XState.<br />
+      The function responsible for sending the emails is written in AWS Lambda.<br
+      /><br />
+      For storing the photos I've used Amazon S3 bucket that is connected to a custom
+      subdomain.<br /><br />
+      This time the site was designed by my client, but I made a lot of UI fixes
+      which we both discussed and agreed on.
+    </ProjectDesc>
+  </main>
 </Layout>

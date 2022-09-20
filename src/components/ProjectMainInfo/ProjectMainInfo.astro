@@ -12,14 +12,16 @@ export interface Props {
 const { name, videoSrc, website, github } = Astro.props as Props;
 ---
 
-<div class="flex flex-col max-w-full w-full">
-  <a href="/" class="w-fit">
-    <Icon.ArrowLeft
-      size="60"
-      class="p-1 rounded-full duration-300 hover:bg-zinc-800"
-      title=""
-    />
-  </a>
+<section class="flex flex-col items-center max-w-full w-full">
+  <div class="flex flex-col max-w-full w-full">
+    <a href="/" class="w-fit">
+      <Icon.ArrowLeft
+        size="60"
+        class="p-1 rounded-full duration-300 hover:bg-zinc-800"
+        title=""
+      />
+    </a>
+  </div>
   <div
     class="flex flex-col self-center items-center max-w-[1200px] w-full mt-16"
   >
@@ -36,4 +38,4 @@ const { name, videoSrc, website, github } = Astro.props as Props;
       </div>
     </div>
   </div>
-</div>
+</section>

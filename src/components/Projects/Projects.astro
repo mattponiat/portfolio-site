@@ -2,48 +2,52 @@
 import Project from "components/Project/Project.astro";
 ---
 
-<div class="flex flex-col items-center max-w-[1500px] w-full">
-  <h2 class="self-start font-medium text-3xl md:text-4xl mb-8">My projects</h2>
-  <div class="flex flex-col gap-[25px] px-1 md:px-3">
-    <Project
-      name="Tea-stash"
-      desc="Teas database app in which you will get full description about many different kinds of teas. It includes search, filtering by type or country and dark mode."
-      imgSrc="https://www.data.mattponiat.pl/project-images/tea-stash.webp"
-      github="https://github.com/mattponiat/tea-stash"
-      website="https://teas.mattponiat.pl"
-      href="/tea-stash"
-    />
-    <Project
-      name="Photographer's portfolio"
-      desc="Portfolio website made for a photographer to showcase his work. It includes a gallery of his photos, custom contact form, and contact info."
-      imgSrc="https://www.data.mattponiat.pl/project-images/photographer-portfolio.webp"
-      github="https://github.com/mattponiat/lukaszponiatowski-portfolio"
-      website="https://lukaszponiatowski.pl"
-      href="/photographer-portfolio"
-    />
-    <Project
-      name="Bienbot"
-      desc="Dashboard for a discord bot. It allows admins to easily get important information about every user and channel in real time."
-      imgSrc="https://www.data.mattponiat.pl/project-images/bienbot.webp"
-      github="https://github.com/bienbot/bienbot"
-      website="https://bienbot.vercel.app/"
-      href="/bienbot"
-    />
-    <Project
-      name="Sorting Visualizer"
-      desc="Visualizer for sorting algorithms. You can change the array size, animation delay and sorting algorithm."
-      imgSrc="https://www.data.mattponiat.pl/project-images/sorting.webp"
-      github="https://github.com/mattponiat/sorting-visualizer"
-      website="https://sorting.mattponiat.pl"
-      href="/sorting-visualizer"
-    />
-    <Project
-      name="TypinguTesto"
-      desc="Small typing test project. User has to type given words and the website will calculate the typing speed. You can change the amount of words you want to type."
-      imgSrc="https://www.data.mattponiat.pl/project-images/typingu-testo.webp"
-      github="https://github.com/mattponiat/typingu-testo"
-      website="https://typing.mattponiat.pl"
-      href="/typingu-testo"
-    />
+<section class="flex flex-col items-center max-w-full mt-32">
+  <div class="flex flex-col items-center max-w-[1500px] w-full">
+    <h2 class="self-start font-medium text-3xl md:text-4xl mb-8">
+      My projects
+    </h2>
+    <div class="flex flex-col gap-[25px] px-1 md:px-3">
+      <Project
+        name="Tea-stash"
+        desc="Teas database app in which you will get full description about many different kinds of teas. It includes search, filtering by type or country and dark mode."
+        imgSrc="https://www.data.mattponiat.pl/project-images/tea-stash.webp"
+        github="https://github.com/mattponiat/tea-stash"
+        website="https://teas.mattponiat.pl"
+        href="/tea-stash"
+      />
+      <Project
+        name="Photographer's portfolio"
+        desc="Portfolio website made for a photographer to showcase his work. It includes a gallery of his photos, custom contact form, and contact info."
+        imgSrc="https://www.data.mattponiat.pl/project-images/photographer-portfolio.webp"
+        github="https://github.com/mattponiat/lukaszponiatowski-portfolio"
+        website="https://lukaszponiatowski.pl"
+        href="/photographer-portfolio"
+      />
+      <Project
+        name="Bienbot"
+        desc="Dashboard for a discord bot. It allows admins to easily get important information about every user and channel in real time."
+        imgSrc="https://www.data.mattponiat.pl/project-images/bienbot.webp"
+        github="https://github.com/bienbot/bienbot"
+        website="https://bienbot.vercel.app/"
+        href="/bienbot"
+      />
+      <Project
+        name="Sorting Visualizer"
+        desc="Visualizer for sorting algorithms. You can change the array size, animation delay and sorting algorithm."
+        imgSrc="https://www.data.mattponiat.pl/project-images/sorting.webp"
+        github="https://github.com/mattponiat/sorting-visualizer"
+        website="https://sorting.mattponiat.pl"
+        href="/sorting-visualizer"
+      />
+      <Project
+        name="TypinguTesto"
+        desc="Small typing test project. User has to type given words and the website will calculate the typing speed. You can change the amount of words you want to type."
+        imgSrc="https://www.data.mattponiat.pl/project-images/typingu-testo.webp"
+        github="https://github.com/mattponiat/typingu-testo"
+        website="https://typing.mattponiat.pl"
+        href="/typingu-testo"
+      />
+    </div>
   </div>
-</div>
+</section>

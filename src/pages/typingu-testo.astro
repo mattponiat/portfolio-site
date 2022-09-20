@@ -6,52 +6,46 @@ import Layout from "layouts/Layout.astro";
 ---
 
 <Layout title="TypinguTesto">
-  <div
+  <main
     class="flex flex-col max-w-full min-h-screen p-4 md:p-8 lg:p-14 text-white"
   >
-    <section class="flex flex-col items-center max-w-full w-full">
-      <ProjectMainInfo
-        name="TypinguTesto"
-        videoSrc="https://www.data.mattponiat.pl/project-videos/typing.mp4"
-        website="https://typing.mattponiat.pl"
-        github="https://github.com/mattponiat/typingu-testo"
-      />
-    </section>
-    <section class="flex flex-col items-center max-w-full w-full mt-16">
-      <Icons
-        icons={[
-          {
-            icon: "https://www.data.mattponiat.pl/icons/react-logo.webp",
-            iconName: "React",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/nextjs-logo.webp",
-            iconName: "Next.js",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/typescript-logo.webp",
-            iconName: "Typescript",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/styled-components-logo.webp",
-            iconName: "Styled Components",
-          },
-        ]}
-      />
-    </section>
-    <section class="flex flex-col items-center max-w-full w-full my-16">
-      <ProjectDesc
-        >A simple web application where you type displayed words and see how
-        many words per minute you can type.<br /><br />
-        It is my first project built with React and Next.js.<br /><br />
-        I've learned a lot about React hooks and React context while building this
-        project.<br />
-        I've also learned how to use styled components.<br /><br />
-        It was my first time using TypeScript and I have been using it for all of
-        my projects since then.<br /><br />
-        I'm planning to add more features in the future and definitely remove Next.js
-        because I've realized it's unnecessary for this app.
-      </ProjectDesc>
-    </section>
-  </div>
+    <ProjectMainInfo
+      name="TypinguTesto"
+      videoSrc="https://www.data.mattponiat.pl/project-videos/typing.mp4"
+      website="https://typing.mattponiat.pl"
+      github="https://github.com/mattponiat/typingu-testo"
+    />
+    <Icons
+      icons={[
+        {
+          src: "https://www.data.mattponiat.pl/icons/react-logo.webp",
+          iconName: "React",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/nextjs-logo.webp",
+          iconName: "Next.js",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/typescript-logo.webp",
+          iconName: "Typescript",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/styled-components-logo.webp",
+          iconName: "Styled Components",
+        },
+      ]}
+    />
+    <ProjectDesc
+      >A simple web application where you type displayed words and see how many
+      words per minute you can type.<br /><br />
+      It is my first project built with React and Next.js.<br /><br />
+      I've learned a lot about React hooks and React context while building this
+      project.<br />
+      I've also learned how to use styled components.<br /><br />
+      It was my first time using TypeScript and I have been using it for all of my
+      projects since then.<br /><br />
+      I'm planning to add more features in the future and definitely remove Next.js
+      because I've realized it's unnecessary for this app.
+    </ProjectDesc>
+  </main>
 </Layout>

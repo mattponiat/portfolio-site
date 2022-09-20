@@ -1,6 +1,6 @@
 ---
 export interface IconsType {
-  icon: string;
+  src: string;
   iconName: string;
 }
 
@@ -11,22 +11,26 @@ export interface Props {
 const { icons } = Astro.props as Props;
 ---
 
-<div class="flex flex-col items-center max-w-[1200px] w-full">
-  <h2 class="self-start font-medium text-2xl sm:text-3xl md:text-4xl mb-8">
-    Technologies
-  </h2>
-  <div
-    class="flex flex-wrap justify-start gap-5 max-w-[1000px] w-full px-1 md:px-3 ml-1"
-  >
-    {
-      icons.map((icon) => (
-        <div class="flex flex-col items-center gap-1 w-[68px] sm:w-[74px]">
-          <div class="w-[45px] h-[45px] md:w-[55px] md:h-[55px]">
-            <img src={icon.icon} alt={icon.iconName} class="w-full h-full" />
+<section class="flex flex-col items-center max-w-full w-full mt-16">
+  <div class="flex flex-col items-center max-w-[1200px] w-full">
+    <h2 class="self-start font-medium text-2xl sm:text-3xl md:text-4xl mb-8">
+      Technologies
+    </h2>
+    <div
+      class="flex flex-wrap justify-start gap-5 max-w-[1000px] w-full px-1 md:px-3 ml-1"
+    >
+      {
+        icons.map((icon) => (
+          <div class="flex flex-col items-center gap-1 w-[68px] sm:w-[74px]">
+            <div class="w-[45px] h-[45px] md:w-[55px] md:h-[55px]">
+              <img src={icon.src} alt={icon.iconName} class="w-full h-full" />
+            </div>
+            <span class="text-sm sm:text-base text-center">
+              {icon.iconName}
+            </span>
           </div>
-          <span class="text-sm sm:text-base text-center">{icon.iconName}</span>
-        </div>
-      ))
-    }
+        ))
+      }
+    </div>
   </div>
-</div>
+</section>

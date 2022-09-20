@@ -6,92 +6,86 @@ import Layout from "layouts/Layout.astro";
 ---
 
 <Layout title="Bienbot">
-  <div
+  <main
     class="flex flex-col max-w-full min-h-screen p-4 md:p-8 lg:p-14 text-white"
   >
-    <section class="flex flex-col items-center max-w-full w-full">
-      <ProjectMainInfo
-        name="Bienbot"
-        videoSrc="https://www.data.mattponiat.pl/project-videos/bienbot.mp4"
-        website="https://bienbot.vercel.app/"
-        github="https://github.com/bienbot/bienbot"
+    <ProjectMainInfo
+      name="Bienbot"
+      videoSrc="https://www.data.mattponiat.pl/project-videos/bienbot.mp4"
+      website="https://bienbot.vercel.app/"
+      github="https://github.com/bienbot/bienbot"
+    />
+    <Icons
+      icons={[
+        {
+          src: "https://www.data.mattponiat.pl/icons/react-logo.webp",
+          iconName: "React",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/nextjs-logo.webp",
+          iconName: "Next.js",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/typescript-logo.webp",
+          iconName: "Typescript",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/nx-logo.webp",
+          iconName: "Nx",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/redux-toolkit-logo.webp",
+          iconName: "Redux Toolkit",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/supabase-logo.webp",
+          iconName: "Supabase",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/express-logo.webp",
+          iconName: "Express",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/styled-components-logo.webp",
+          iconName: "Styled components",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/storybook-logo.webp",
+          iconName: "Storybook",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/framer-motion-logo.webp",
+          iconName: "Framer Motion",
+        },
+        {
+          src: "https://www.data.mattponiat.pl/icons/jest-logo.webp",
+          iconName: "Jest",
+        },
+      ]}
+    />
+    <ProjectDesc>
+      Bienbot is a dashboard for a custom discord bot.<br />
+      It was made for discord admins to give them an easy way to view statistics
+      of their users and channels.<br />
+      It is, by far, the biggest project I've ever taken part in.<br /><br />
+      Frontend was made in Next.js, backend in Express and the discord bot in Discord.js.<br
       />
-    </section>
-    <section class="flex flex-col items-center max-w-full w-full mt-16">
-      <Icons
-        icons={[
-          {
-            icon: "https://www.data.mattponiat.pl/icons/react-logo.webp",
-            iconName: "React",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/nextjs-logo.webp",
-            iconName: "Next.js",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/typescript-logo.webp",
-            iconName: "Typescript",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/nx-logo.webp",
-            iconName: "Nx",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/redux-toolkit-logo.webp",
-            iconName: "Redux Toolkit",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/supabase-logo.webp",
-            iconName: "Supabase",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/express-logo.webp",
-            iconName: "Express",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/styled-components-logo.webp",
-            iconName: "Styled components",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/storybook-logo.webp",
-            iconName: "Storybook",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/framer-motion-logo.webp",
-            iconName: "Framer Motion",
-          },
-          {
-            icon: "https://www.data.mattponiat.pl/icons/jest-logo.webp",
-            iconName: "Jest",
-          },
-        ]}
+      UI Components Library was made with Storybook, Styled Components and Framer
+      Motion.<br />
+      All the data is stored in Supabase database and state is managed by Redux Toolkit.<br
       />
-    </section>
-    <section class="flex flex-col items-center max-w-full w-full my-16">
-      <ProjectDesc>
-        Bienbot is a dashboard for a custom discord bot.<br />
-        It was made for discord admins to give them an easy way to view statistics
-        of their users and channels.<br />
-        It is, by far, the biggest project I've ever taken part in.<br /><br />
-        Frontend was made in Next.js, backend in Express and the discord bot in Discord.js.<br
-        />
-        UI Components Library was made with Storybook, Styled Components and Framer
-        Motion.<br />
-        All the data is stored in Supabase database and state is managed by Redux
-        Toolkit.<br />
-        Nx monorepo was used to easily store everything in one repository.<br
-        /><br />
-        <b>Work is still in progress.</b><br /><br />
-        For now only Dashboard, User Panel and Users List are finished.<br />
-        The biggest obstacle is the UI design and since we don't have a UI designer
-        it takes a lot of time to create new pages.<br /><br />
-        I am creating this project with <a
-          class="underline"
-          href="https://github.com/lkarasinski"
-          target="_blank"
-          >@lkarasinski
-        </a>
-      </ProjectDesc>
-    </section>
-  </div>
+      Nx monorepo was used to easily store everything in one repository.<br
+      /><br />
+      <b>Work is still in progress.</b><br /><br />
+      For now only Dashboard, User Panel and Users List are finished.<br />
+      The biggest obstacle is the UI design and since we don't have a UI designer
+      it takes a lot of time to create new pages.<br /><br />
+      I am creating this project with <a
+        class="underline"
+        href="https://github.com/lkarasinski"
+        target="_blank"
+        >@lkarasinski
+      </a>
+    </ProjectDesc>
+  </main>
 </Layout>
