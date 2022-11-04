@@ -3,15 +3,18 @@ interface Props {
   text: string;
   href: string;
   target?: "_blank";
+  hidden?: boolean;
 }
 
-const { text, href, target } = Astro.props as Props;
+const { text, href, target, hidden } = Astro.props as Props;
 ---
 
-<a
-  href={href}
-  target={target}
-  class="flex justify-center items-center w-[85px] md:w-[95px] h-[40px] md:h-[45px] text-sm md:text-base border border-solid border-white cursor-pointer no-underline transition duration-300 hover:bg-white hover:text-black"
->
-  {text}
-</a>
+<button hidden={hidden}>
+  <a
+    href={href}
+    target={target}
+    class="flex justify-center items-center w-[85px] md:w-[95px] h-[40px] md:h-[45px] text-sm md:text-base border border-solid border-white cursor-pointer no-underline transition duration-300 hover:bg-white hover:text-black"
+  >
+    {text}
+  </a>
+</button>

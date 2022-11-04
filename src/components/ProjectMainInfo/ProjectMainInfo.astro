@@ -7,9 +7,10 @@ export interface Props {
   videoSrc: string;
   website: string;
   github: string;
+  hidden?: boolean;
 }
 
-const { name, videoSrc, website, github } = Astro.props as Props;
+const { name, videoSrc, website, github, hidden } = Astro.props as Props;
 ---
 
 <section class="flex flex-col items-center max-w-full w-full">
@@ -34,7 +35,7 @@ const { name, videoSrc, website, github } = Astro.props as Props;
       </video>
       <div class="flex gap-4">
         <Button href={website} text="Visit site" target="_blank" />
-        <Button href={github} text="Github" target="_blank" />
+        <Button href={github} text="Github" target="_blank" hidden={hidden} />
       </div>
     </div>
   </div>

@@ -9,9 +9,11 @@ export interface Props {
   github: string;
   website: string;
   href: string;
+  hidden?: boolean;
 }
 
-const { name, desc, imgSrc, github, website, href } = Astro.props as Props;
+const { name, desc, imgSrc, github, website, href, hidden } =
+  Astro.props as Props;
 ---
 
 <div
@@ -26,7 +28,7 @@ const { name, desc, imgSrc, github, website, href } = Astro.props as Props;
       <Button text="More info" href={href} />
       <div class="flex gap-4">
         <Button text="Visit site" href={website} target="_blank" />
-        <Button text="Github" href={github} target="_blank" />
+        <Button text="Github" href={github} target="_blank" hidden={hidden} />
       </div>
     </div>
   </div>
