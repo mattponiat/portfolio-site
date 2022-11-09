@@ -1,0 +1,41 @@
+---
+import Icons from "components/Icons/Icons.astro";
+import ProjectDesc from "components/ProjectDesc/ProjectDesc.astro";
+import ProjectMainInfo from "components/ProjectMainInfo/ProjectMainInfo.astro";
+import Layout from "layouts/Layout.astro";
+---
+
+<Layout title="AWDOM">
+  <main
+    class="flex flex-col max-w-full min-h-screen p-4 md:p-8 lg:p-14 text-white"
+  >
+    <ProjectMainInfo
+      name="AWDOM"
+      videoSrc="https://www.data.mattponiat.pl/project-videos/awdom.mp4"
+      website="https://awdom.eu"
+      github=""
+      hidden={true}
+    />
+    <Icons
+      icons={[
+        {
+          iconName: "WordPress",
+          src: "https://www.data.mattponiat.pl/icons/wordpress-logo.webp",
+        },
+        {
+          iconName: "Elementor",
+          src: "https://www.data.mattponiat.pl/icons/elementor-logo.webp",
+        },
+        {
+          iconName: "WPForms",
+          src: "https://www.data.mattponiat.pl/icons/wpforms-logo.webp",
+        },
+      ]}
+    />
+    <ProjectDesc>Website made for a client that specializes in commissioning the construction of houses.<br/>You can view different house projects and finished houses, read about the company and contact them through the contact form.<br/><br/>
+    This is my second project that I created while working as a freelancer.<br/><br/>
+    My client wanted to be able to maintain this site by himself, that is why I chose WordPress for this job.<br/><br/>
+    Besides the website, I've also set up the contact form, emails and hosting for the client.
+    </ProjectDesc>
+  </main>
+</Layout>
