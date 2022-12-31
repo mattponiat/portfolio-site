@@ -22,9 +22,7 @@ const { icons } = Astro.props as Props;
       {
         icons.map((icon) => (
           <div class="flex flex-col items-center gap-1 w-[68px] sm:w-[74px]">
-            <div class="w-[45px] h-[45px] md:w-[55px] md:h-[55px]">
-              <img src={icon.src} alt={icon.iconName} class="w-full h-full" />
-            </div>
+              <img src={icon.src} alt={icon.iconName} class="w-full aspect-[4/3] object-contain" />
             <span class="text-sm sm:text-base text-center">
               {icon.iconName}
             </span>
