@@ -1,0 +1,84 @@
+---
+import Icons from "components/Icons/Icons.astro";
+import ProjectDesc from "components/ProjectDesc/ProjectDesc.astro";
+import ProjectMainInfo from "components/ProjectMainInfo/ProjectMainInfo.astro";
+import Layout from "layouts/Layout.astro";
+---
+
+<Layout title="Chatting">
+  <main
+    class="flex flex-col max-w-full min-h-screen p-4 md:p-8 lg:p-14 text-white"
+  >
+    <ProjectMainInfo
+      name="Chatting"
+      videoSrc="https://www.data.mattponiat.pl/project-videos/chatting.mp4"
+      website="https://chat.mattponiat.pl"
+      github="https://github.com/mattponiat/chatting"
+    />
+    <Icons
+      icons={[
+        {
+          iconName: "React",
+          src: "https://www.data.mattponiat.pl/icons/react-logo.webp",
+        },
+        {
+          iconName: "Next.js",
+          src: "https://www.data.mattponiat.pl/icons/nextjs-logo.webp",
+        },
+        {
+          iconName: "Typescript",
+          src: "https://www.data.mattponiat.pl/icons/typescript-logo.webp",
+        },
+        {
+          iconName: "TRPC",
+          src: "https://www.data.mattponiat.pl/icons/trpc-logo.svg",
+        },
+        {
+          iconName: "Next Auth",
+          src: "https://www.data.mattponiat.pl/icons/next-auth-logo.webp",
+        },
+        {
+          iconName: "Prisma",
+          src: "https://www.data.mattponiat.pl/icons/prisma-logo.webp",
+        },
+        {
+          iconName: "Supabase",
+          src: "https://www.data.mattponiat.pl/icons/supabase-logo.webp",
+        },
+        {
+          iconName: "Pusher",
+          src: "https://www.data.mattponiat.pl/icons/pusher-logo.webp",
+        },
+        {
+          iconName: "React Aria",
+          src: "https://www.data.mattponiat.pl/icons/react-aria-logo.webp",
+        },
+        {
+          iconName: "DaisyUI",
+          src: "https://www.data.mattponiat.pl/icons/daisyui-logo.svg",
+        },
+        {
+          iconName: "Tailwind CSS",
+          src: "https://www.data.mattponiat.pl/icons/tailwind-logo.webp",
+        },
+        {
+          iconName: "Zustand",
+          src: "https://www.data.mattponiat.pl/icons/zustand-logo.webp",
+        },
+        {
+          iconName: "Zod",
+          src: "https://www.data.mattponiat.pl/icons/zod-logo.webp",
+        },
+      ]}
+    />
+    <ProjectDesc>
+      This is an online chat application that allows you to create your own channel with a custom name or a random name. Logged-in users have the option to change the color of their usernames.<br/><br/>
+      This application is built using T3Stack.<br/><br/>
+      NextAuth handles the login process.<br/>
+      Currently, users can log in using Github or Discord, but they can also use the site anonymously without logging in.<br/><br/>
+      Supabase is used as the database, and trpc's routers are used to make queries and mutations on it. The database schema is created in Prisma.<br/><br/>
+      Pusher.js is responsible for sending messages.<br/><br/>
+      For styling, Tailwind CSS and DaisyUI are primarily used, making it easy to add new styles or make changes.
+    </ProjectDesc>
+  </main>
+</Layout>
